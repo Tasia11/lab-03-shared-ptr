@@ -1,7 +1,7 @@
 // Copyright 2020 Osipova Anastasiya anastasiyaosipova2001@gmail.com
 
-#ifndef INCLUDE_HEADER_HPP_
-#define INCLUDE_HEADER_HPP_
+#ifndef INCLUDE_SHARED_PTR_HPP_
+#define INCLUDE_SHARED_PTR_HPP_
 
 #include <atomic>
 #include <iostream>
@@ -127,5 +127,4 @@ template <typename T>
 auto SharedPtr<T>::use_count() const -> size_t {
   return static_cast<size_t>(*counter);
 }
-
-#endif  // INCLUDE_HEADER_HPP_
+#endif  // INCLUDE_SHARED_PTR_HPP_
