@@ -4,7 +4,7 @@
 
 #include <string>
 
-#include "header.hpp"
+#include "shared_ptr.hpp"
 TEST(SharedPtr, EmptySharedPtr) {
   SharedPtr<std::string> r;
   ASSERT_EQ(r.get(), nullptr);
